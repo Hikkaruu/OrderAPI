@@ -1,4 +1,5 @@
-# Very simple app that let you see products, filter them and add new one
+# Very simple app that let you see products, filter them and add new ones
+## It uses API endpoints I made in C# ASP.NET
 
 ![react1](https://github.com/Hikkaruu/OrderAPI/blob/react/1.png)
 
