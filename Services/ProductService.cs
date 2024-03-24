@@ -91,5 +91,10 @@ namespace SimpleProductOrder.Services
         {
             return _context.Reviews.Where(r => r.Product.Id == productId).ToList();
         }
+
+        public ICollection<Product> GetProductsByCategory(int categoryId)
+        {
+            return _context.Products.Where(p => p.Category.Id == categoryId).ToList();
+        }
     }
 }

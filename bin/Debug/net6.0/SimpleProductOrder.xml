@@ -38,6 +38,16 @@
             
              </remarks>
         </member>
+        <member name="M:SimpleProductOrder.Controllers.CategoryController.GetCategories">
+            <summary>
+            Get all categories
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CategoryController.GetCategory(System.Int32)">
+            <summary>
+            Get category with selected id
+            </summary>
+        </member>
         <member name="M:SimpleProductOrder.Controllers.CategoryController.CreateCategory(SimpleProductOrder.Dto.CategoryDto)">
              <summary>
              Add category
@@ -47,8 +57,182 @@
             
                  POST /api/Category
                  {
-                    "login": "John",
-                    "password": "Doe"
+                    "name": "food"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CategoryController.UpdateCategory(System.Int32,SimpleProductOrder.Dto.CategoryDto)">
+            <summary>
+            Update category
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CategoryController.DeleteCategory(System.Int32)">
+            <summary>
+            Delete category
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CustomerController.GetCustomers">
+            <summary>
+            Get all customers
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CustomerController.GetCustomer(System.Int32)">
+            <summary>
+            Get customer with selected id
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CustomerController.CreateCustomer(SimpleProductOrder.Dto.CustomerDto)">
+             <summary>
+             Add customer
+             </summary>
+             <remarks>
+             Sample request:
+            
+               POST /api/Customer
+                 {
+                    "name": "string",
+                    "surname": "string",
+                    "email": "string",
+                    "phone": "string",
+                    "address": "string"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CustomerController.UpdateCustomer(System.Int32,SimpleProductOrder.Dto.CustomerDto)">
+            <summary>
+            Update category
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CustomerController.DeleteCustomer(System.Int32)">
+            <summary>
+            Delete category
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.GetOrders">
+            <summary>
+            Get all orders
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.GetOrder(System.Int32)">
+            <summary>
+            Get order with selected id
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.GetProductsFromOrder(System.Int32)">
+            <summary>
+            Get all products from selected order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.CreateOrder(System.Int32,SimpleProductOrder.Dto.OrderDto)">
+             <summary>
+             Add order
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Order
+                 {
+                    "order_date": "2024-03-22T14:31:52.677Z"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.AddProductToOrder(System.Int32,System.Int32,SimpleProductOrder.Dto.OrderProductDto)">
+            <summary>
+            Add product to selected order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.UpdateOrder(System.Int32,SimpleProductOrder.Dto.OrderDto)">
+            <summary>
+            Update order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.UpdateProductQtyInOrder(System.Int32,System.Int32,SimpleProductOrder.Dto.OrderProductDto)">
+            <summary>
+            Update product in selected order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.DeleteOrder(System.Int32)">
+            <summary>
+            Delete order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.OrderController.RemoveProductFromOrder(System.Int32,System.Int32)">
+            <summary>
+            Delete product from selected order
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.GetProducts">
+            <summary>
+            Get all products
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.GetProduct(System.Int32)">
+            <summary>
+            Get product with selected id
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.GetProductReviews(System.Int32)">
+            <summary>
+            Get all reviews of selected product
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.GetProductsWithCategory(System.Int32)">
+            <summary>
+            Get all products of selected category
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.CreateProduct(System.Int32,SimpleProductOrder.Dto.ProductDto)">
+             <summary>
+             Add product
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Product
+                 {
+                      "name": "string",
+                      "price": 0,
+                      "weight": 0,
+                      "description": "string",
+                      "qty": 0
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete product
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ProductController.UpdateProduct(System.Int32,SimpleProductOrder.Dto.ProductDto)">
+            <summary>
+            Update product details
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ReviewController.GetReviews">
+            <summary>
+            Get all reviews
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ReviewController.GetReview(System.Int32)">
+            <summary>
+            Get review with selected id
+            </summary>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.ReviewController.CreateReview(System.Int32,System.Int32,SimpleProductOrder.Dto.ReviewDto)">
+             <summary>
+             Add review
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Account
+                 {
+                    "title": "string",
+                    "content": "string"
                  }
             
              </remarks>

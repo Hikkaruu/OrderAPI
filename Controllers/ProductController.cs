@@ -64,7 +64,7 @@ namespace SimpleProductOrder.Controllers
         /// <summary>
         /// Get all reviews of selected product
         /// </summary>
-        [HttpGet("{productId}/reviews")]
+        [HttpGet("{productId}/Reviews")]
         [ProducesResponseType(200, Type = typeof(List<Review>))]
         [ProducesResponseType(404)]
         public IActionResult GetProductReviews(int productId)
@@ -77,6 +77,24 @@ namespace SimpleProductOrder.Controllers
             }
 
             return Ok(reviews);
+        }
+
+        /// <summary>
+        /// Get all products of selected category
+        /// </summary>
+        [HttpGet("{categoryId}/Category")]
+        [ProducesResponseType(200, Type = typeof(List<Review>))]
+        [ProducesResponseType(404)]
+        public IActionResult GetProductsWithCategory(int categoryId)
+        {
+            var products = _productService.GetProductsByCategory(categoryId);
+
+            if (products == null || !products.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(products);
         }
 
         /// <summary>

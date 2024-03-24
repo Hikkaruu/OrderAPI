@@ -65,3 +65,8 @@ C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\Microsoft.Exten
 C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\Scrutor.dll
 C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\Hikkaru\Desktop\API\SimpleProductOrder\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
