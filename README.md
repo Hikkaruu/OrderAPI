@@ -1,3 +1,7 @@
+# Very simple app that let you see products, filter them and add new one
+
+![react1](https://github.com/Hikkaruu/OrderAPI/blob/react/1.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
