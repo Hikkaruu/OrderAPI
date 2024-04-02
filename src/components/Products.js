@@ -13,7 +13,7 @@ function Products() {
         weight: '',
         description: '',
         qty: '',
-        categoryId: '' // Added categoryId field for category selection
+        categoryId: '' 
   });
   const [responseData, setResponseData] = useState(null);
 
