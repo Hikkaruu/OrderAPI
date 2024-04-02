@@ -43,7 +43,7 @@ function Products() {
         console.error('Error fetching data:', error);
         if (error.response && error.response.status === 404){
            setData([]);
-        }
+         }
       }
     };
 
